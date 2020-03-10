@@ -1,0 +1,19 @@
+{
+  "name": "productlandingpage",
+  "version": "1.0.0",
+  "description": "A product landing webpage for one of freeCodeCamp's Responsive Web Design certification challenges.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OnixFang/productlandingpage.git"
+  },
+  "author": "OnixFang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OnixFang/productlandingpage/issues"
+  },
+  "homepage": "https://github.com/OnixFang/productlandingpage#readme"
+}
