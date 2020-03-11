@@ -2,6 +2,10 @@ body {
   background: linear-gradient(90deg, rgba(255, 242, 203, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(255, 255, 255, 1) 65%, rgba(255, 242, 203, 1) 100%);
 }
 
+h2 {
+  text-align: center;
+}
+
 #header {
   position: fixed;
   z-index: 100;
@@ -33,9 +37,22 @@ body {
   border-radius: 20px;
 }
 
-section p {
+.big-paragraph p {
   font-size: 1.5em;
+}
+
+.justify p {
   text-align: justify;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 20px 0;
+}
+
+#pricing .col {
+  height: 100%;
 }
 
 #video {

@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-  var elems = document.querySelectorAll('.carousel');
-  var instances = M.Carousel.init(elems);
+  const elem = document.getElementById('carousel');
+  const instance = M.Carousel.init(elem);
+
+  setInterval(() => {
+    instance.next();
+  }, 2000);
 });

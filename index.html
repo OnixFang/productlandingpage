@@ -8,6 +8,8 @@
 
   <!-- Materialize CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Google Icon Font -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Site CSS -->
   <link rel="stylesheet" href="css/index.css">
 </head>
@@ -31,7 +33,7 @@
   <div class="custom-container">
     <section id="show-cast">
       <h2 class="center-align">Get the most beautiful colors!</h2>
-      <div class="carousel">
+      <div id="carousel" class="carousel">
         <a class="carousel-item" href="#">
           <div class="color-box blue"></div>
         </a>
@@ -49,7 +51,7 @@
         </a>
       </div>
     </section>
-    <section id="about">
+    <section id="about" class="big-paragraph justify">
       <h2>The service</h2>
       <p>Generic Color Inc. provides you with colorful solutions for any of your visual needs! Be it photo edition,
         video edition, video sampling,
@@ -62,9 +64,9 @@
       <p>While you are here, enjoy the demo video below and the page's layout and hipotetical scheme of a real world
         product website!</p>
     </section>
-    <section id="demo">
+    <section id="demo" class="big-paragraph">
       <h2>Demo</h2>
-      <p>Here is a video showcasting one of our editor's video editing skills.</p>
+      <p class="center-align">Here is a video showcasting one of our editor's video editing skills.</p>
       <div class="row">
         <div class="col s12 center-align">
           <iframe id="video" src="https://www.youtube.com/embed/m-px2iJDgfQ" frameborder="0"
@@ -75,13 +77,99 @@
     <section id="pricing">
       <h2>Pricing</h2>
       <div class="row">
-        <div class="col s4">
+        <div class="col s12 m6 l4">
+          <div class="card medium hoverable brown lighten-4">
+            <div class="card-content center-align">
+              <span class="card-title"><strong>Junior</strong></span>
+              <p class="price">$30/day</p>
+              <p>Photo editing:</p>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <p>Video editing:</p>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <p>Body paint:</p>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+            </div>
+            <div class="card-action center-align">
+              <button class="btn">Buy</button>
+              <button class="btn activator">Details</button>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title"><i class="material-icons right">close</i></span>
+              <p>Mostly skilled for photo editting and body-paints.</p>
+            </div>
+          </div>
         </div>
-        <div class="col s4">
-          <p></p>
+        <div class="col s12 m6 l4">
+          <div class="card medium hoverable brown lighten-4">
+            <div class="card-content center-align">
+              <span class="card-title"><strong>Intermediate</strong></span>
+              <p class="price">$40/day</p>
+              <p>Photo editing:</p>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <p>Video editing:</p>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <p>Body paint:</p>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+            </div>
+            <div class="card-action center-align">
+              <button class="btn">Buy</button>
+              <button class="btn activator">Details</button>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title"><i class="material-icons right">close</i></span>
+              <p>Best fit for advanced video edition and other graphic editing.</p>
+            </div>
+          </div>
         </div>
-        <div class="col s4">
-          <p></p>
+        <div class="col s12 m6 l4">
+          <div class="card medium hoverable brown lighten-4">
+            <div class="card-content center-align">
+              <span class="card-title"><strong>Senior</strong></span>
+              <p class="price">$55/day</p>
+              <p>Photo editing:</p>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <p>Video editing:</p>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <p>Body paint:</p>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+            </div>
+            <div class="card-action center-align">
+              <button class="btn">Buy</button>
+              <button class="btn activator">Details</button>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title"><i class="material-icons right">close</i></span>
+              <p>The complete expert. Best for premium feel products.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -108,7 +196,8 @@
                           </div>
                         </div>
                         <div class="col s2">
-                          <input id="submit" type="submit" class="btn amber accent-1 waves-effect waves-light" value="Subscribe">
+                          <input id="submit" type="submit" class="btn amber accent-1 waves-effect waves-light"
+                            value="Subscribe">
                         </div>
                       </div>
                     </div>
